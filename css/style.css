@@ -1,138 +1,153 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Ramabhadra');
+@charset "UTF-8";
 
-* { margin:0;  padding:0; }
-ol,ul { list-style: none; }
-a { outline:0; text-decoration:none; color:#555; }
-img { border:0; }
-body { font:12px/1.6 arial; color:#555; } 
 
-h1 { position:fixed; top:20px; left:50px; z-index:10; color:#fff; font-family: 'Ramabhadra', sans-serif; }
-h1 img { width:200px; height:auto; }
 
-#menu { position:fixed; top:20px; left:500px; z-index:13; }
-#menu li {float:left; font-size:24px; }
-#menu a { display:block; float:left; width:150px; height:45px; font-family: 'Ramabhadra', sans-serif; font-size:24px; color:#fff; text-align:right; overflow:hidden; box-sizing:border-box;   opacity:0.8; transition:all 0.5s; }
-#menu li:hover a { font-size:24px;  opacity:1; }
-#menu li.on a { font-size:24px; opacity:1; }
-
-#boolean { position:fixed; top:50%; left:0px; margin-top:-100px; z-index:13; }
-#boolean a { display:block; width:50px; height:60px; text-align:right; }
-
-#menu li:nth-child(1):hover a { color:#d4164c; border-color:#d4164c; }
-#menu li:nth-child(2):hover a { color:#fff; border-color:#fff; }
-#menu li:nth-child(3):hover a { color:#ffec6a; border-color:#ffec6a; }
-#menu li:nth-child(4):hover a { color:#005a89; border-color:#005a89; }
-
-#menu li:nth-child(1).on a { color:#d4164c; border-color:#d4164c; }
-#menu li:nth-child(2).on a { color:#fff; border-color:#fff; }
-#menu li:nth-child(3).on a { color:#ffec6a; border-color:#ffec6a; }
-#menu li:nth-child(4).on a { color:#005a89; border-color:#005a89; }
-
-section { width:100%; height:700px; position:relative; background-size:cover; background-position:right center; background-attachment:fixed; overflow:hidden; }
-section:nth-child(1) { background: #DBE6F6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #C5796D, #DBE6F6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- }
-section:nth-child(2) { background: #be93c5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #be93c5, #7bc6cc); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #be93c5, #7bc6cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-section:nth-child(3) { background: #C9FFBF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- }
-section:nth-child(4) { background: #2BC0E4;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- }
-
-article { text-align:center; margin-top:150px; z-index:11;}
-article h2 { font-family: 'Teko', sans-serif; font-size:50px; letter-spacing:2px; line-height:1; text-align:center; padding-bottom:20px; } 
-article span { font-size:16px;text-align:center;  }
-section:nth-child(1) h2 { color:#d4164c; }
-section:nth-child(1) span { color:#111; }
-section:nth-child(2) h2 { color:#fff; }
-section:nth-child(2) span { color:#fff; }
-section:nth-child(3) h2 { color:#fff; }
-section:nth-child(3) span { color:#ffec6a; }
-section:nth-child(4) h2 { color:#005a89; }
-section:nth-child(4) span { color:#111; }
-
-.p11 { position:absolute; bottom:20px; right:20px; }
-.p12 { position:absolute; bottom:-40px; right:130px; }
-.p13 { position:absolute; top:180px; right:60px; }
-
-.p21 { position:absolute; bottom:-480px; right:-180px; }
-.p22 { position:absolute; bottom:-40px; right:130px; }
-
-.p31 { position:absolute; bottom:30px; right:180px; }
-.p32 { position:absolute; bottom:-270px; right:110px; }
-.p33 { position:absolute; bottom:-130px; right:-70px; }
-
-.p41 { position:absolute; bottom:-120px; right:20px; }
-.p42 { position:absolute; bottom:-180px; right:0px; }
-
-#tell {position: relative; width:600px; height:300px; margin:0 auto; margin-top:80px;}
-#tell #cleft {position: absolute;left:0;font-size:20px;z-index: 9999;background:#fff; text-align: left;color: #000;}
-#tell #cleft i { width:20px; padding-bottom: 30px; }
-#tell #cright { position: absolute; right:0; font-size:20px;z-index: 9999; width:100%; }
-
-/* ==========================================================================
-Contact Us Style
-========================================================================== */
-#contact {
-  padding: 60px 0;
-  text-align: center;
+/*--- main_wrap ---*/
+.main_wrap {
 }
-#contact h2 {
-  text-transform: uppercase;
+/*--- header ---*/
+header {
+    width:100%;
+    position:relative;
+    z-index: 1000;
 }
-#contact form {
+.gnb{
+    height:58px;
+    margin-top:25px;
+}
+.gnb li{
+    float:left;
+    width:20%;
+    text-align: center;
+    line-height: 59px;
+}
+.gnb li a{
+    color: #fff;
+    display: inline-block; /* for lavaMenu width */
+    text-transform: uppercase;
+    line-height: 20px;
+}
+.gnb li:nth-child(3) a{
+    /*  
+    white-space: nowrap; 
+    width: 97px; 
+    overflow: hidden;
+    text-overflow: clip; 
+    border: 0; */
+    font-size:0;
+}
+.gnb li a::after{
+    content: "";
+    display: block;
+    width:100%;
+    height:3px;
+    background-color: #a593e0;
+    opacity: 100%;
+    transform:scaleX(0);
+    transform-origin: 50% 50%;
+    transition: transform 0.5s ease;
 
 }
-#contact .form-group {
-  margin-bottom: 10px;
-}
-#contact .form-control {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: 2px solid #15829e;
-  color: #15829e;
-  width: 93.5%;
-  min-height: 40px;
-  padding: 0 10px;
-}
-#contact textarea {
-  height: 130px;
-  resize: none;
-  padding:10px 0;
-  line-height: 30px;
-}
-#submit {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: 2px solid #15829e;
-  color: #fff;
-  background-color: #15829e;
-  width: 97.5%;
-  min-height: 40px;
-  padding: 0 10px;
-  font-size: 15px;
+.gnb li:not(.logo) a:hover:after{
+    transform:scaleX(1);
 }
 
-/* footer */
-footer {position:fixed;right: 0;color: #fff;top: 0;width:50px;height:100%;z-index: 9999;font-size: 20px;padding-top: 20px;font-family: 'Ramabhadra', sans-serif; }
-#sns { position:fixed; right:30px; bottom:20px; z-index:14; }
-#sns img { padding: 5px 0; }
 
-#slide_banner img {
-    width:500px;
-    height:300px;
-  
+
+/*--- container ---*/
+.container{
+    width:100%;
+    position: relative;
+    margin-top: -83px;
+}
+.container div{
+    width:100%;
+    position:relative;
+}
+.home{
+    height:768px;
+    background: rgba(86, 98, 112, 0.9) url("../img/mv.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+.home h1{
+    text-align:center;
+    color: #fff;
+    font-size: 42px;
+    padding-top:350px;
+
+}
+/* .home h1:after{
+  content: "|";
+  animation: pulse 0.7s ease infinite;
+}
+@keyframes pulse {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+} */
+
+/* typed effect. code for animated blinking cursor */
+.typed-cursor{
+   opacity: 1;
+   font-weight: 100;
+   font-size:64px;
+   -webkit-animation: blink 0.7s infinite;
+   animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+   0% { opacity:1; }
+   50% { opacity:0; }
+   100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+   0% { opacity:1; }
+   50% { opacity:0; }
+   100% { opacity:1; }
 }
 
-#banner_wrap {
-    margin-top:100px;
+.typed-fade-out{
+   opacity: 0;
+   animation: 0;
+   transition: opacity .25s;
 }
+
+.home div{
+    width:100%;
+    position: absolute;
+    bottom: 10px;
+}
+.home .mouse img{
+    text-align: center;
+    width:64px;
+    height:64px;
+    padding-left: 50%;
+    margin-left: -32px;
+}
+#about{
+    height:1141px;
+    background-color: #333;    
+}
+#work{
+    height:924px;
+    background-color: #444;
+}
+#skill{
+    height:597px;
+    background-color: #555;
+}
+#contact{
+    height:839px;
+    background-color: #666;
+}
+
+/*--- content ---*/
+
+/*--- footer ---*/
+footer{
+    width:100%;
+    position: relative;
+    background-color: #566270;
+    height:112px;
+}
+
+
