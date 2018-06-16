@@ -1,5 +1,10 @@
 @charset "UTF-8";
-
+/*--- layout css ---*/
+h2, p { text-align:center; color:#fff; }
+h2 { font-size: 40px; text-transform: uppercase; padding:100px 0 30px 0; }
+.fLeft { float:left; width:50%; }
+.fRight { float:right; width:50%; }
+.wrap {width:1200px !important; margin:0 auto;}
 
 
 /*--- main_wrap ---*/
@@ -127,17 +132,98 @@ header {
     height:1141px;
     background-color: #333;    
 }
+#about .insta {
+    position: absolute;
+    top: 0;
+    height: 811px;
+    background-color: #FFFFF3;
+}
+#about .insta h2, #about .insta p {
+    color: #55616F;
+}
+#about .insta .gram {
+    
+}
+#about .insta .f {
+    margin:0 auto;
+    width:1200px;
+    position: relative;
+}
+#about .wannabe {
+    position: absolute;
+    bottom: 0;
+    height: 330px;
+    background-color: #55616F;
+}
 #work{
     height:924px;
     background-color: #444;
 }
 #skill{
     height:597px;
-    background-color: #555;
+    background-color: rgba(141, 125, 191, 0.5);
+}
+#skill div {
+    padding-top:50px;
+}
+#skill ul {
+    width:100%;
+}
+#skill li {
+    float: left;
+    width: 25%;
+    margin: 0;
+    text-align: center;
+}
+#skill li a {
+    color: #fffff3;
+    line-height: 40px;
+}
+#skill li div img{
+    margin: 0 auto;
+}
+#skill .sWrap{
+    overflow: hidden;
+    position:relative;
+    width:100px;
+    height:187px;
+    margin:0 auto;
+}
+#skill .sWrap img{
+    position:absolute;
+    bottom:0;
+    left: 50%;
+    margin-left: -50px;
+}
+#skill li:nth-child(1) .sWrap .back{
+    bottom: -37px 
+}
+#skill li:nth-child(3) .sWrap .back, #skill li:nth-child(4) .sWrap .back{
+    bottom: -20px;
+    margin-left: -100px;
+}
+#skill li p {
+    margin-top: 20px;
+}
+#skill b{
+    position: relative;
+    color: #fff;
+    z-index: 100000;
+    font-size: 2em;
+    line-height: 220px;
 }
 #contact{
     height:839px;
     background-color: #666;
+}
+#contact iframe{
+    padding-top: 50px; 
+}
+#contact .send {
+    position:absolute;
+    width:468px;
+    z-index: 9999;
+    background-color: #fffff3;
 }
 
 /*--- content ---*/
@@ -148,6 +234,14 @@ footer{
     position: relative;
     background-color: #566270;
     height:112px;
+}
+footer p{
+    line-height: 30px;
+    text-align:left;
+}
+footer img{
+    position: absolute;
+    right:30px;
 }
 
 
